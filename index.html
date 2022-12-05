@@ -65,7 +65,7 @@
         <h1 class="hero-title animate__animated animate__fadeIn">
           Ефективні рішення для <br />вашого бізнесу
         </h1>
-        <button class="hero-btn btn" type="button">Замовити послугу</button>
+        <button class="hero-btn btn" type="button" data-modal-open>Замовити послугу</button>
       </section>
       <section class="particular section">
         <div class="container">
@@ -424,6 +424,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn modal-btn" data-modal-close>
+          <svg class="icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
