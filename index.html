@@ -18,6 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -57,7 +62,9 @@
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
+        <h1 class="hero-title animate__animated animate__fadeIn">
+          Ефективні рішення для <br />вашого бізнесу
+        </h1>
         <button class="hero-btn btn" type="button">Замовити послугу</button>
       </section>
       <section class="particular section">
@@ -113,10 +120,13 @@
       </section>
       <section class="work">
         <div class="container">
-          <h2 class="work-title title">Чим ми займаємося</h2>
+          <h2 class="work-title title" data-aos="fade-up" data-aos-duration="500">
+            Чим ми займаємося
+          </h2>
           <ul class="work-list list">
             <li class="item">
               <img src="./images/img_1.jpg" width="370" height="294" alt="Людина програмує" />
+              <h3 class="work-description">Десктопні додатки</h3>
             </li>
             <li class="item">
               <img
@@ -125,6 +135,7 @@
                 height="294"
                 alt="Дівчина створєю дизайн мобільного додатку"
               />
+              <h3 class="work-description">Мобільні додатки</h3>
             </li>
             <li class="item">
               <img
@@ -133,13 +144,14 @@
                 height="294"
                 alt="Людина підбирає колір на планшеті"
               />
+              <h3 class="work-description">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
       </section>
       <section class="team section">
         <div class="container">
-          <h2 class="team-title title">Наша команда</h2>
+          <h2 class="team-title title" data-aos="fade-up" data-aos-duration="500">Наша команда</h2>
           <ul class="team-list list">
             <li class="item">
               <img
@@ -411,5 +423,9 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
