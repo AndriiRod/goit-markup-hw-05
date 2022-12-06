@@ -492,7 +492,7 @@ img {
 
 /* 😄portfolio.html😄------------------------------------ */
 
-/* ###############--Project--###############*/
+/* *###############--Project--###############*/
 .project-filter {
   display: flex;
   justify-content: center;
@@ -578,7 +578,7 @@ img {
 
   border: 1px solid #eeeeee;
   border-top: none;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 .project-subtitle {
   margin-bottom: 4px;
